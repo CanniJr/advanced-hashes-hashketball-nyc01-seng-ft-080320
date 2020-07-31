@@ -145,6 +145,8 @@ end
 end
 end
 
+######### next method #######
+
 def shoe_size(players_name)
   game_hash.each do |location,team|
     team.each do |team_info_keys,stats|
@@ -159,6 +161,8 @@ def shoe_size(players_name)
 end
 end
 end
+
+######### next method #######
 
 def team_colors(team_name)
   game_hash.each do |location,team|
@@ -175,6 +179,7 @@ def team_names
   end
 end
 
+######### next method #######
 
 def player_numbers(team_name)
   #reminder to make new array
@@ -193,6 +198,8 @@ def player_numbers(team_name)
   jerseys
 end
 
+######### next method #######
+
 def player_stats(sought_player_name)
   new_hash = {}
   game_hash.collect do |place, team|
@@ -210,6 +217,8 @@ def player_stats(sought_player_name)
   end
   new_hash
 end
+
+######### next method #######
 
 def big_shoe_rebounds
   

@@ -177,19 +177,19 @@ end
 
 
 def player_numbers(team_name)
-  jersey_array = []
+  jerseys = []
   game_hash.each do |location, team|
    if team[:team_name] == team_name
     team.each do |team_info_key, specifics|
       if team_info_key == :players
       specifics.each do |stat|
-        jersey_array << stat[:number]
+        jerseys << stat[:number]
       end
       end
       end
     end
   end
-  jersey_array
+  jerseys
 end
 
 def player_stats(sought_player_name)

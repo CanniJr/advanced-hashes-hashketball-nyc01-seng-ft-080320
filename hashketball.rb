@@ -165,6 +165,7 @@ def team_colors(team_name)
       game_hash[location][:colors]
   end
 end
+game_hash
 end
 
 def team_names

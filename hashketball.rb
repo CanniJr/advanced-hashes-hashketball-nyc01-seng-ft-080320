@@ -162,7 +162,7 @@ end
 def team_colors(team_name)
   game_hash.each do |location,team|
     if team[:team_name] == team_name
-      puts game_hash[location][:colors]
+      p game_hash[location][:colors]
   end
 end
 end

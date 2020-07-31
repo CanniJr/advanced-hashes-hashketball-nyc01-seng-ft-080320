@@ -126,7 +126,7 @@ def game_hash
     }
   }
 end
-
+require 'pry'
 # Write code here
 
 
@@ -134,6 +134,7 @@ def num_points_scored(player_name)
 game_hash.each do |location, team_info|
   team_info.each do |attribute,data_value|
     if attribute == :players
+      #binding.pry
       data_value.each do |player_stats|
         if player_stats[:player_name] == player_name
           return player_stats[:points]

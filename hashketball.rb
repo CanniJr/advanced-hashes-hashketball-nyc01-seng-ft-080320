@@ -177,6 +177,7 @@ end
 
 
 def player_numbers(team_name)
+  #reminder to make new array
   jerseys = []
   game_hash.each do |location, team|
    if team[:team_name] == team_name
@@ -212,17 +213,17 @@ end
 
 def big_shoe_rebounds
   biggest_shoe = 0
-  rebounds = 0
+  num_of_rebs = 0
 
   game_hash.each do |location, team|
     team[:players].each do |player|
       if player[:shoe] > biggest_shoe
         biggest_shoe = player[:shoe]
         #binding.pry
-        rebounds = player[:rebounds]
+        num_of_rebs = player[:rebounds]
       end
     end
   end
 
-  rebounds
+  num_of_rebs
 end
